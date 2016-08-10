@@ -8,20 +8,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Prateek's Blog</title>
+    
 
     <!-- Bootstrap Core CSS -->
-    <link href="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="../css/agency.min.css" rel="stylesheet">
+    <link href="/public/css/agency.min.css" rel="stylesheet">
 
 </head>
 <body id="page-top" class="index">
