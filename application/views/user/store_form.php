@@ -42,7 +42,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Prateek's Blog</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Below the waist</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,18 +54,21 @@
                     <li>
                         <a class="page-scroll" href="#services">Daily Updates</a>
                     </li>
-                     <li>
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Log In</a>
-                    </li>
-                   
+                                      
                     <li>
                         <a class="page-scroll" href="#team">Youtube</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Sign up</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#login">Log in</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +83,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">YOU DESERVE TO LOOK GOOD</div>
                 <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#portfolio" class="page-scroll btn btn-xl">Log In</a>
+                <a href="#login" class="page-scroll btn btn-xl">Log In</a>
             </div>
         </div>
     </header>
@@ -168,7 +171,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">LOG IN</h2>
+                    <h2 class="section-heading">SIGN UP</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
