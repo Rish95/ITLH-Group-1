@@ -43,5 +43,10 @@ class User_model extends CI_Model
 		// return $insert;
 		return $this->db->update('products',$data, array('id' => $id));
 	}
+	public function forgot_pass($email)
+	{
+		$query = $this->db->select('*')->from('users')->where('emailid', $email)->get();
+		return $query->row();
+	}
 
 }

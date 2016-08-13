@@ -34,7 +34,14 @@ MariaDB [ecomm]> create table images(
      primary key(id));
 
 
-
+CREATE TABLE users(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(100) NOT NULL,
+mail varchar(100) NOT NULL UNIQUE,
+pass varchar(100) NOT NULL,
+tokenCode varchar(100) NOT NULL,
+PRIMARY KEY (id)
+)
 
 
      Software is now being installed. Please make sure you have copied installation details to safe location:

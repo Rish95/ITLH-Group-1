@@ -1,3 +1,10 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot Password</title>
+</head>
+<body>
 <div class="container">
      	<div class="row padding-top-btm">
     
@@ -13,7 +20,7 @@
 </div>
 <h4>Forget pasword</h4>
 <div class="form-group">
-    <label for="txtLoginid">Email Id</label>
+    <label for="emailid">Email Id</label>
      <input name="emailid" type="email" size="25" id="emailid" placeholder="Enter email" class="form-control" value="<?php echo set_value('emailid');?>" />
      <span style="color:red"><?php echo form_error('emailid');?></span>
      </div>
@@ -24,3 +31,5 @@
 </div></div>
 </div>
 </div>
+</body>
+</html>

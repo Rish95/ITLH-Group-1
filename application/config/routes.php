@@ -52,7 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['user/register']= "user/store_form"; // localhost:8080/user/register
 $route['user/register_post']= "user/store";
-$route['user/fgtpwd']= "user/forgetpassword";
+$route['user/forgotpassword']= "user/display_doforget";
+$route['user/frgt']= "user/display_doforget";
 // $route['user/delete/:ids'] ='user/delete/$ids';
 
 
