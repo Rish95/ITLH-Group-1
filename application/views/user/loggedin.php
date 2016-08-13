@@ -66,7 +66,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a>$name</a>
+                        <a> <?php echo $name ?></a>
                     </li>
                 </ul>
             </div>
