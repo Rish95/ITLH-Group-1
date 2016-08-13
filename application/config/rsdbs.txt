@@ -32,3 +32,18 @@ MariaDB [ecomm]> create table images(
      pro_id int,
      url varchar(255),
      primary key(id));
+
+
+
+
+
+     Software is now being installed. Please make sure you have copied installation details to safe location:
+Software: PrestaShop
+Version: 1.4.6.2
+Installation URL: http://rishabhs.tk/presta
+Admin Login URL: http://rishabhs.tk/presta/administration/login.php
+Admin uername: root
+Admin password: 123456
+Database Name: u482041890_yryqu
+Database Username: u482041890_uwasu
+Database Password: yXevuvumyJ

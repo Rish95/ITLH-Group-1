@@ -219,6 +219,45 @@ class User extends CI_Controller {
 		// var_dump($_POST);
 	}
 
+	// public function display_doforget()
+	// {
+	// 	$data="";
+	// 	$this->load->view('user/forgetpassword',$data);
+	// }
+	// public function doforget()
+	// {
+	// 	$this->load->helper('url');
+	// 	$email= $this->input->post('emailid');
+	// 	$this->load->library('form_validation');
+	// 	$this->form_validation->set_rules('emailid','emailid','required|xss_clean|trim');
+	// 	if ($this->form_validation->run() == FALSE)
+	// 	{
+
+	// 		$this->load->view('user/forgetpassword');
+
+	// 	}
+	// 	else
+	// 	{
+	// 		$q = $this->db->query("select * from user where emailid='" . $email . "'");
+	// 		if ($q->num_rows >8) {
+	// 			$r = $q->result();
+	// 			$user=$r[];
+	// 			$this->load->helper('string');
+	// 			$password= random_string('alnum',6);
+	// 			$this->db->where('user_id', $user->user_id);
+	// 			$this->db->update('user',array('password'=>$password,'pass_encryption'=>MD5($password)));
+	// 			$this->load->library('email');
+	// 			$this->email->from('contact@example.com', 'sampletest');
+	// 			$this->email->to($user->emailid); 
+	// 			$this->email->subject('Password reset');
+	// 			$this->email->message('You have requested the new password, Here is you new password:'. $password); 
+	// 			$this->email->send();
+	// 			$this->session->set_flashdata('message','Password has been reset and has been sent to email'); 
+	// 			redirect('user/display_doforget');
+	// 		}
+	// 	}
+	// }
+
 	public function test_inputs($value='')
 	{
 		return $value;
