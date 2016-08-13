@@ -10,13 +10,13 @@ class User_model extends CI_Model
 	{
 		// Insert data in users table.
 		// INSERT INTO 'users' ('email', 'pass') VALUES ($data['email'], $data['pass']);
-		$insert = $this->db->insert('products', $data);
+		$insert = $this->db->insert('users', $data);
 		return $insert;
 	}
 
 	public function show_all()
 	{
-		$query = $this->db->select('*')->from('products')->get();
+		$query = $this->db->select('*')->from('users')->get();
 		
 		return $query->result();
 		// var_dump($query->result());
@@ -26,13 +26,13 @@ class User_model extends CI_Model
 
 	public function show_one($id)
 	{
-		$query = $this->db->select('*')->from('products')->where('id', $id)->get();
+		$query = $this->db->select('*')->from('users')->where('id', $id)->get();
 		return $query->row();
 	}
 
 	public function delete_user($id)
 	{
-		return $this->db->delete('products', array('id' => $id));
+		return $this->db->delete('users', array('id' => $id));
 	}
 
 	public function update_user($id,$data)
@@ -41,7 +41,7 @@ class User_model extends CI_Model
 		// return $query->row();
 		// $insert = $this->db->insert('products', $record);
 		// return $insert;
-		return $this->db->update('products',$data, array('id' => $id));
+		return $this->db->update('users',$data, array('id' => $id));
 	}
 	public function forgot_pass($email)
 	{

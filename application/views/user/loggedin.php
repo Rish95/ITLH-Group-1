@@ -66,10 +66,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Sign up</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#login">Log in</a>
+                        <a>$name</a>
                     </li>
                 </ul>
             </div>
@@ -77,82 +74,15 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">YOU DESERVE TO LOOK GOOD</div>
-                <div class="intro-heading">LET'S GET STARTED</div>
-                <a href="#login" class="page-scroll btn btn-xl">Log In</a>
+                <div class="intro-lead-in">WELCOME <?php echo $name ?> </div>
+                <div class="intro-heading">LET'S SHOP</div>
+                <a href="#login" class="page-scroll btn btn-xl">SHOP</a>
             </div>
         </div>
     </header>
-
-
-
-                                                                 <!-- SIGN UP section-->
- <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">SIGN UP</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row text-center">
-           		 <div class="col-md-offset-4 col-md-4 col-ms-offset-4">
-                                    
-<FORM class="col-pad-20" action="index2.php" method="post">
-    <div>
-            <LABEL> First Name</LABEL>
-     	    <INPUT TYPE="TEXT" NAME="f_name" />
-    </div>
-    <div>
-            <LABEL> Last Name</LABEL>
-        	<INPUT TYPE="TEXT" NAME="l_name" />
-    </div>
-    <div> 
-        <label>Gender</label>
-        <INPUT TYPE="RADIO" NAME="gender" />Male
-        <INPUT TYPE="RADIO" NAME="gender" />Female   
-    </div>
-	<div>
-   			<label>Date of Birth</label>
-    		<input type="date" name="date"/>
-    </div>    
-    <div >
-        <label>Contact Number</label>
-        <INPUT TYPE="TEXT" NAME="number"  MAXLENGTH="10" />
-    </div>
-    <div>
-   		<label>Email Address</label>
-    	<input type="email" name="email" placeholder="FULL EMAIL ADDRESS" />
-    </div>
-    <div>
-        <label>Password</label>
-        <INPUT TYPE="TEXT" NAME="security" PLACEHOLDER="SECURITY" />
-    </div>
-     <div>
-        <label>RE-enter Password</label>
-        <INPUT TYPE="TEXT" NAME="security1" PLACEHOLDER="SECURITY" />
-    </div>
-    <div>
-        <label>Permanent Address</label>
-        <INPUT TYPE="TEXT" NAME="home_add" PLACEHOLDER=" HOME ADDRESS" />      
-    <div>
-        <button type="submit" class="btn btn-primary btn-lg active">submit</button>
-        <button type="reset" class="btn btn-default btn-lg active">reset</button>
-    </div>
-    </div>
-    </input>
-</FORM>             
-
-                </div>
-            </div>
-        </div>
-    </section>
-    
 
     <!-- jQuery -->
     <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/vendor/jquery/jquery.min.js"></script>
@@ -169,33 +99,12 @@
 
     <!-- Theme JavaScript -->
     <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/js/agency.min.js">
-   /* $('#services').on("click",function()
-    {
-   $.ajax({
-        url: "partial_services.html",
-
-   }).done(function(responce){
-    console.log(responce);
-    $('#xyz').html(responce);
-   }); 
-    }
-    );*/
+ 
     </script>
 
 
 
 
-
-	<!--?php 
-	echo "<b><pre>Product:&nbsp;&nbsp;&nbsp;&nbsp;\tQty&nbsp;&nbsp;&nbsp;\tPrice&nbsp;&nbsp;&nbsp;\tCategory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\tDescription&nbsp;&nbsp;&nbsp;\tImg<br></pre></b>";
-	if(!empty($products)){
-		foreach ($products as $product) {
-			// echo "<li> $product->prdtnm <a href='/user/delete/$product->id'> Delete </a> </li>";
-			echo "<li><pre>{$product->prdt_nm}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t{$product->qty}&nbsp;&nbsp;&nbsp;\t{$product->prc}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t&nbsp;&nbsp;&nbsp;{$product->ctg_id}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t{$product->descp}&nbsp;&nbsp;&nbsp;&nbsp;\t{$product->img}&nbsp;&nbsp;&nbsp;&nbsp;\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\t<a href='/user/delete/$product->id'>Delete</a>&nbsp;&nbsp;<a href='/user/update/$product->id'>Update</a></pre></li>"; 
-			// 
-		}
-	}
-	?-->
 
 </form>
 </body>

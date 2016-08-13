@@ -12,7 +12,7 @@ class User extends CI_Controller {
 		// var_dump("in store_form");
 		$this->load->model('User_model');
 		$data['errors'] = $this->session->flashdata('errors');
-		$data['products'] = $this->User_model->show_all();
+		$data['users'] = $this->User_model->show_all();
 		$this->load->model('Category_model');
 		$data['categories'] = $this->Category_model->show_all();
 		// var_dump($data);
@@ -21,8 +21,17 @@ class User extends CI_Controller {
 
 	public function store()
 	{
+		
+		$f_name=$_POST['f_name'];
+		$l_name=$_POST['l_name'];
+		$date=$_POST['date'];
+		$home_add=$_POST['home_add'];
+		$email=$_POST['email'];
+		$security=$_POST['security'];
+	    $gender=$_POST['gender'];
+		$number=$_POST['number'];
 		// Input Validation????????
-		$errors = [];
+		/*$errors = [];
 		if($_POST['prdtnm'] == '') // if(empty($email))
 		{
 			$errors['prdtnm'] = "\nProduct Name is required.";
@@ -64,7 +73,7 @@ class User extends CI_Controller {
 		// 		$email = $this->test_inputs($_POST['prdtnm']);
 		// 	}			
 		// }
-
+*/
 
 
 
@@ -87,23 +96,31 @@ class User extends CI_Controller {
 		}
 		
 		$data = [
-			'prdt_nm' => $prdtnm,
-			'qty' => $qty,
-			'prc' => $prc,
-			'ctg_id' => $ctg_id,
-			'descp' => $descp,
-
-		];
+		'name'=>$f_name,
+		'lname'=>$l_name,
+		'date'=>$date,
+		'address'=>$home_add,
+		'mail'=>$email,
+		'pass'=>$security,
+		'gender'=>$gender,
+		'contact'=>$number];
 		// Store values in DB
 	
 
 		$this->load->model('User_model');
 		$isCreated = $this->User_model->store_user($data);
 		if($isCreated){
-			redirect('/user/register');
+			$this->session->set_flashdata('name', $data['name']);
+			redirect('user/registered');
 		}
 		// Show Welcome page (You have successfully registered)
 		// var_dump($_POST);
+	}
+	public function loggedin()
+	{
+		$data['name'] = $this->session->flashdata('name');
+		$this->load->view('user/loggedin',$data);
+
 	}
 
 	public function delete($id)
