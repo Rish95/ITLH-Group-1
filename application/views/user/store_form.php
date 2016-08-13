@@ -35,7 +35,7 @@
 		}
 		?>
 
-
+             <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
 		   <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">YOU DESERVE TO LOOK GOOD</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
+                <div class="intro-heading">LET'S GET STARTED</div>
                 <a href="#login" class="page-scroll btn btn-xl">Log In</a>
             </div>
         </div>
