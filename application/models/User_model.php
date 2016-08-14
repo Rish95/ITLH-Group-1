@@ -45,7 +45,7 @@ class User_model extends CI_Model
 	}
 	public function forgot_pass($email)
 	{
-		$query = $this->db->select('*')->from('users')->where('emailid', $email)->get();
+		$query = $this->db->select('*')->from('users')->where('mail', $email)->get();
 		return $query->row();
 	}
 

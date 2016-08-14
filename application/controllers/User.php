@@ -248,9 +248,9 @@ class User extends CI_Controller {
 		// 	die();
 			
 		$this->load->helper('url');
-		$email= $this->input->post('emailid');
+		$email= $this->input->post('mail');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('emailid','emailid','required|xss_clean|trim');
+		$this->form_validation->set_rules('mail','mail','required|xss_clean|trim');
 		if ($this->form_validation->run() == FALSE)
 		{
 
@@ -270,7 +270,7 @@ class User extends CI_Controller {
 				$this->db->update('users',array('pass'=>$password,'	tokenCode'=>MD5($password)));
 				$this->load->library('email');
 				$this->email->from('contact@example.com', 'sampletest');
-				$this->email->to($user->emailid); 
+				$this->email->to($user->mail); 
 				$this->email->subject('Password reset');
 				$this->email->message('You have requested the new password, Here is you new password:'. $password); 
 				$this->email->send();
