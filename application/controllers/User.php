@@ -244,8 +244,8 @@ class User extends CI_Controller {
 	}
 	public function doforget()
 	{
-		var_dump('str');
-			die();
+		// var_dump('str');
+		// 	die();
 			
 		$this->load->helper('url');
 		$email= $this->input->post('emailid');

@@ -5,6 +5,7 @@
 	<title>Forgot Password</title>
 </head>
 <body>
+<!-- C:\Users\Rishabh\Documents\GitHub\ITLH-Group-1 -->
 <div class="container">
      	<div class="row padding-top-btm">
     
