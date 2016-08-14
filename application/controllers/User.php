@@ -141,6 +141,7 @@ class User extends CI_Controller {
 
 	}
 
+
 	public function update_form($id)
 	{
 		$this->load->model('User_model');
