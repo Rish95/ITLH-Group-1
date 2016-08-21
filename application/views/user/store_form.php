@@ -21,7 +21,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="/public/css/agency.min.css" rel="stylesheet">
+    <link href="/public/css/agency.css" rel="stylesheet">
 
 </head>
 <body id="page-top" class="index">
@@ -36,7 +36,7 @@
 		}
 		?>
 
-             <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+             <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix">
 		   <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -103,7 +103,7 @@
             <div class="row text-center">
            		 <div class="col-md-offset-4 col-md-4 col-ms-offset-4">
                                     
-<FORM class="col-pad-20" action="index2.php" method="post">
+<FORM class="col-pad-10" action="index2.php" method="post">
     <div>
             <LABEL> First Name</LABEL>
      	    <INPUT TYPE="TEXT" NAME="f_name" />
