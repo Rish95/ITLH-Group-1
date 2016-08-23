@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     
 
@@ -25,7 +28,7 @@
 
 </head>
 <body id="page-top" class="index">
-    <form action="/user/register_post" method="post">
+    <form action="/user/image1" method="post">
 	
 		<?php //echo validation_errors(); ?>
 		<?php 
@@ -66,7 +69,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a> <?php echo $name ?></a>
+                        <a><span class="glyphicon glyphicon-user"></span><?php echo $name ?></a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +82,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">WELCOME <?php echo $name ?> </div>
                 <div class="intro-heading">LET'S SHOP</div>
-                <a href="#login" class="page-scroll btn btn-xl">SHOP</a>
+                <button class="page-scroll btn btn-xl" type="submit">SHOP</button>
             </div>
         </div>
     </header>
