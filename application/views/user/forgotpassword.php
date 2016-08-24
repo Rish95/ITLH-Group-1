@@ -19,7 +19,7 @@
 <?php }?>
 
 </div>
-<h4>Forgot pasword</h4>
+<h4>Forget pasword</h4>
 <div class="form-group">
     <label for="mail">Email Id</label>
      <input name="mail" type="email" size="25" id="mail" placeholder="Enter email" class="form-control" value="<?php echo set_value('mail');?>" />
