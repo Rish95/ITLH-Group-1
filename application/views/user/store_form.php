@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 
     <!-- Bootstrap Core CSS -->
@@ -21,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="/public/css/agency.min.css" rel="stylesheet">
+    <link href="/public/css/agency.css" rel="stylesheet">
 
 </head>
 <body id="page-top" class="index">
@@ -36,7 +38,7 @@
 		}
 		?>
 
-             <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+             <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix">
 		   <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -89,8 +91,6 @@
         </div>
     </header>
 
-
-
                                                                  <!-- SIGN UP section-->
  <section id="portfolio">
         <div class="container">
@@ -103,19 +103,20 @@
             <div class="row text-center">
            		 <div class="col-md-offset-4 col-md-4 col-ms-offset-4">
                                     
-<FORM class="col-pad-20" action="index2.php" method="post">
+<FORM class="col-pad-10" action="index2.php" method="post">
+    <div class="well">
     <div>
-            <LABEL> First Name</LABEL>
-     	    <INPUT TYPE="TEXT" NAME="f_name" />
+            <LABEL> First Name </span></LABEL>
+     	    <INPUT TYPE="TEXT" NAME="f_name"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
     <div>
             <LABEL> Last Name</LABEL>
-        	<INPUT TYPE="TEXT" NAME="l_name" />
+        	<INPUT TYPE="TEXT" NAME="l_name"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
     <div> 
         <label>Gender</label>
         <INPUT TYPE="RADIO" NAME="gender" />Male
-        <INPUT TYPE="RADIO" NAME="gender" />Female   
+        <INPUT TYPE="RADIO" NAME="gender">Female<span class="glyphicon glyphicon-asterisk"></span></INPUT>   
     </div>
 	<div>
    			<label>Date of Birth</label>
@@ -127,11 +128,11 @@
     </div>
     <div>
    		<label>Email Address</label>
-    	<input type="email" name="email" placeholder="FULL EMAIL ADDRESS" />
+    	<input type="email" name="email" placeholder="FULL EMAIL ADDRESS"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
     <div>
         <label>Password</label>
-        <INPUT TYPE="TEXT" NAME="security" PLACEHOLDER="SECURITY" />
+        <INPUT TYPE="TEXT" NAME="security" PLACEHOLDER="SECURITY"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
      <div>
         <label>RE-enter Password</label>
@@ -145,7 +146,7 @@
         <button type="reset" class="btn btn-default btn-lg active">reset</button>
     </div>
     </div>
-    </input>
+    </div>
 </FORM>             
 
                 </div>
@@ -155,21 +156,21 @@
     
 
     <!-- jQuery -->
-    <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/vendor/jquery/jquery.min.js"></script>
+    <script src="/public/vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/public/vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/js/jqBootstrapValidation.js"></script>
-    <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/js/contact_me.js"></script>
+    <script src="/public/js/jqBootstrapValidation.js"></script>
+    <script src="/public/js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="C:/Users/PRATEEEK/Desktop/ITLH/CI_Project/public/js/agency.min.js">
-   /* $('#services').on("click",function()
+    <script src="/public/js/agency.min.js">
+    $('#services').on("click",function()
     {
    $.ajax({
         url: "partial_services.html",
@@ -179,7 +180,7 @@
     $('#xyz').html(responce);
    }); 
     }
-    );*/
+    );
     </script>
 
 

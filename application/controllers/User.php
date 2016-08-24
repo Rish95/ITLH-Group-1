@@ -3,7 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
 
-
+	public function image_first()
+	{	
+		/*$name=$_POST['name'];
+		$data = [
+		'name'=>$name];
+		$this->session->set_flashdata('name', $data['name']);
+		$data['name'] = $this->session->flashdata('name');*/
+     $this->load->view('user/image_first_user');
+    }
 
 	public function store_form()
 	{	
