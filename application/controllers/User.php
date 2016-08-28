@@ -126,6 +126,7 @@ class User extends CI_Controller {
 	}
 	public function loggedin()
 	{
+	
 		$data['name'] = $this->session->flashdata('name');
 		$this->load->view('user/loggedin',$data);
 
