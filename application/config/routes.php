@@ -53,6 +53,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['user/register']= "user/store_form"; // localhost:8080/user/register
 $route['user/registered']= "user/loggedin";
 $route['user/register_post']= "user/store";
+$route['user/home']= "/verifylogin";
+
 $route['user/image1']= "user/image_first";
 $route['user/forgotpassword']= "user/display_doforget";
 $route['user/frgt']= "user/display_doforget";
@@ -67,7 +69,11 @@ $route['user/update/(:num)']= 'user/update_form/$1';
 $route['user/update_post']= 'user/update';
 // $route['user/update/:ids']= 'user/update/$ids'; // localhost:8080/user/register
 
-$route['default_controller'] = 'welcome';
+$route['default_controller']= 'login';
+// $route['default_controller']= 'user/store_form';
+// $route['default_controller']= 'welcome';
+
+
 // $route['404_override'] = '';
 // $route['translate_uri_dashes'] = FALSE;
 
