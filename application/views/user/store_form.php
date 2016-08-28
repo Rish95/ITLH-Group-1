@@ -27,7 +27,7 @@
 
 </head>
 <body id="page-top" class="index">
-    <form action="/user/register_post" method="post">
+    <!-- <form action="/user/register_post" method="post"> -->
 	
 		<?php //echo validation_errors(); ?>
 		<?php 
@@ -83,6 +83,8 @@
     <!-- Header -->
     <header>
         <div class="container">
+        <?php echo validation_errors(); ?>
+
             <div class="intro-text">
                 <div class="intro-lead-in">YOU DESERVE TO LOOK GOOD</div>
                 <div class="intro-heading">LET'S GET STARTED</div>
@@ -103,32 +105,33 @@
             <div class="row text-center">
            		 <div class="col-md-offset-4 col-md-4 col-ms-offset-4">
                                     
-<FORM class="col-pad-10" action="index2.php" method="post">
+<!-- <FORM class="col-pad-10" action="index2.php" method="post"> -->
+    <form action="/user/register_post" method="post">
     <div class="well">
     <div>
             <LABEL> First Name </span></LABEL>
-     	    <INPUT TYPE="TEXT" NAME="f_name"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
+            <INPUT TYPE="TEXT" NAME="f_name"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
     <div>
             <LABEL> Last Name</LABEL>
-        	<INPUT TYPE="TEXT" NAME="l_name"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
+            <INPUT TYPE="TEXT" NAME="l_name"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
     <div> 
         <label>Gender</label>
         <INPUT TYPE="RADIO" NAME="gender" />Male
         <INPUT TYPE="RADIO" NAME="gender">Female<span class="glyphicon glyphicon-asterisk"></span></INPUT>   
     </div>
-	<div>
-   			<label>Date of Birth</label>
-    		<input type="date" name="date"/>
+    <div>
+            <label>Date of Birth</label>
+            <input type="date" name="date"/>
     </div>    
     <div >
         <label>Contact Number</label>
         <INPUT TYPE="TEXT" NAME="number"  MAXLENGTH="10" />
     </div>
     <div>
-   		<label>Email Address</label>
-    	<input type="email" name="email" placeholder="FULL EMAIL ADDRESS"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="FULL EMAIL ADDRESS"><span class="glyphicon glyphicon-asterisk"></span></INPUT>
     </div>
     <div>
         <label>Password</label>
@@ -147,7 +150,29 @@
     </div>
     </div>
     </div>
-</FORM>             
+</form>             
+
+                </div>
+            </div>
+        </div>
+    </section>
+     <section id="login">
+    <!-- <FORM class="col-pad-10" action="index2.php" method="post"> -->
+    <div class="col-md-offset-4 col-md-4 col-ms-offset-4 text-center">
+    <form action="user/home" method="post">
+    <div class="well">
+    <!-- <div class="col-lg-12 text-center"> -->
+    <h1>Log in</h1>
+    <label for="username">Username:</label>
+     <input type="text" size="20" id="username" name="username"/>
+     <br/>
+     <label for="password">Password:</label>
+     <input type="password" size="20" id="passowrd" name="password"/>
+     <br/>
+     <a href="user/forgotpassword">Forgot Password</a><br>
+     <input type="submit" value="Login"/>
+    </div>
+    </form>           
 
                 </div>
             </div>
@@ -198,6 +223,6 @@
 	}
 	?-->
 
-</form>
+<!-- </form> -->
 </body>
 </html>
