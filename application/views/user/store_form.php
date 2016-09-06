@@ -156,26 +156,35 @@
             </div>
         </div>
     </section>
-     <section id="login">
+<section id="login">
     <!-- <FORM class="col-pad-10" action="index2.php" method="post"> -->
-    <div class="col-md-offset-4 col-md-4 col-ms-offset-4 text-center">
+    <div class="col-lg-12 text-center">
+    <h1>Log in</h1>
+        <br></br>
+            <br></br>
+    <div class="row text-center">
+                 <div class="col-md-offset-4 col-md-4 col-ms-offset-4">
     <form action="user/home" method="post">
     <div class="well">
     <!-- <div class="col-lg-12 text-center"> -->
-    <h1>Log in</h1>
+    
     <label for="username">Username:</label>
      <input type="text" size="20" id="username" name="username"/>
-     <br/>
+     <br></br>
      <label for="password">Password:</label>
-     <input type="password" size="20" id="passowrd" name="password"/>
-     <br/>
-     <a href="user/forgotpassword">Forgot Password</a><br>
-     <input type="submit" value="Login"/>
+     <input type="password" size="20" id="password" name="password"/>
+     <br> </br>   
+    <button type="submit" class="btn btn-primary btn-lg active">LOGIN</button>
+    <br></br>
+     <a href="user/forgotpassword">Forgot Password</a>
+     <br>
     </div>
     </form>           
 
                 </div>
             </div>
+     </div>
+     </div>
         </div>
     </section>
     
