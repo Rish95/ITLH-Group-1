@@ -9,4 +9,3 @@
    <a href="home/logout">Logout</a>
  </body>
 </html>
- 

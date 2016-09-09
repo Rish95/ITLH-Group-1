@@ -22,7 +22,7 @@ class VerifyLogin extends CI_Controller {
      $this->load->view('user/store_form');
    }
    else
-   {
+   { 
      //Go to private area
     // $this->session->set_flashdata('name', $data['name']);
     // $this->session->set_flashdata('name', $data['name']);

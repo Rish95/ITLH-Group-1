@@ -3,6 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
 
+	
+	public function pro_pg()
+	{	
+		
+		$data['name'] = $this->session->flashdata('name');
+		$this->load->view('user/pro_pg',$data);
+    }
+
 	public function image_first()
 	{	
 		/*$name=$_POST['name'];

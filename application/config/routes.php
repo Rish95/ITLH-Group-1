@@ -53,6 +53,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['user/register']= "user/store_form"; // localhost:8080/user/register
 $route['user/registered']= "user/loggedin";
 $route['user/register_post']= "user/store";
+$route['user/profile']= "user/pro_pg";
+
 $route['user/home']= "/verifylogin";
 
 $route['user/image1']= "user/image_first";
