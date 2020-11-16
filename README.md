@@ -4,4 +4,4 @@ Live Project
 
 e-Commerce Website
 
-Members: Prateek Bopaiah, Rishabh Santoshkumar
+Members: PB, RS
